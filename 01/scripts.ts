@@ -9,3 +9,5 @@ type Usuario = {
 const cadastrarUsuário = (info: Usuario): Usuario => {
     return info;
 }
+
+type UsuarioSemRG = Required<Omit<Usuario, 'rg'>>
